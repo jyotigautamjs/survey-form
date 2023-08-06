@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head starts from here-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<!-- Body starts from here -->
+
+<body>
+    <div class="container">
+
+        <!-- Heading section  -->
+        <div class="heading">
+            <h1 id="title">Sukhna Wildlife Trekking Survey Form</h1>
+            <p id="description">We appreciate your participation. Please take time to fill this survey and leave
+                remark for future
+                improvements</p>
+        </div>
+
+        <form id="survey-form">
+
+            <!-- Personal Information section -->
+            <fieldset class="box">
+                <legend class="box-title">Personal Information:</legend>
+                <div>
+                    <label for="name" id="name-label">Name</label>
+                    <input id="name" type="text" placeholder="Enter your name" required />
+                </div>
+                <div>
+                    <label for="number" id="number-label">Age</lable>
+                        <input id="number" type="number" min="10" max="99" placeholder="Enter your age" />
+                </div>
+                <div>
+                    <label for="dob">Date of Birth</lable>
+                        <input id="dob" type="date" placeholder="Enter your date of birth" />
+                </div>
+                <div>
+                    <label for="email" id="email-label">Email</label>
+                    <input id="email" type="email" placeholder="Enter your email" required />
+                </div>
+                <div>
+                    <label for="contact-number">Contact Number (optional)</label>
+                    <input id="contact-number" type="number" placeholder="Contact Number" pattern=”[1-9]{1}[0-9]{9}”. />
+                </div>
+            </fieldset>
+
+            <!-- Tracking Experience section -->
+            <fieldset class="box">
+                <legend class="box-title">Trekking Experience:</legend>
+                <div class="experience">
+                    <p>Rate the overall experience</p>
+                    <span><input type="radio" name="experienc" id="advanced" class="inline"
+                            value="advanced">Advanced</span>
+                    <span><input type="radio" name="experienc" id="intermediate" class="inline"
+                            value="intermediate">Intermediate</span>
+                    <span><input type="radio" name="experienc" id="novice" class="inline" value="novice">Novice</span>
+                </div>
+                <div class="experience">
+                    <p>Fitness level</p>
+                    <span><input type="radio" name="fitness-level" id="high" class="inline" value="high">High</span>
+                    <span><input type="radio" name="fitness-level" id="moderate" class="inline"
+                            value="moderate">Moderate</span>
+                    <span><input type="radio" name="fitness-level" id="low" class="inline" value="low">Low</span>
+                </div>
+                <div class="experience">
+                    <p>Select the facilities that were provided to you:</p>
+                    <div>
+                        <input type="checkbox" name="facilities" id="food-and-water" value="food-and-water">
+                        <label for="food-and-water">Food and Water</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="facilities" id="guidlines" value="guidlines">
+                        <label for="guidlines">Guide and Support Staff</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="facilities" id="equipment" value="equipment">
+                        <label for="equipment">Trekking Equipment</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="facilities" id="transportation" value="transportation">
+                        <label for="transportation">Transportation</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="facilities" id="restrooms" value="restrooms">
+                        <label for="restrooms">Restrooms</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="facilities" id="medical-support" value="medical-support">
+                        <label for="medical-support">Medical Support</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="facilities" id="safety" value="safety">
+                        <label for="safety">Safety Gear</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Trek Organization section-->
+            <fieldset class="box">
+                <legend class="box-title">Trek Organization:</legend>
+                <div>
+                    <label for="satisfaction">Were the pre-trek arrangements satisfactory?</label>
+                    <span> <input type="radio" name="satisfaction" value="No" class="inline" />No</span>
+                    <span><input type="radio" name="satisfaction" value="Yes" class="inline" />Yes</span>
+                </div>
+                <div>
+                    <label for="guidelines">Were the trek instructions and guidelines clear?</label>
+                    <span><input type="radio" name="guidelines" value="No" class="inline" />No</span>
+                    <span><input type="radio" name="guidelines" value="Yes" class="inline" />Yes</span>
+                </div>
+                <div>
+                    <label for="dropdown">How did you hear about the trek?</label>
+                    <select id="dropdown">
+                        <option value="">Select any one</option>
+                        <option value="2">Search Engine(Google, Bing, etc)</option>
+                        <option value="4">Newspaper/Online Newspaper</option>
+                        <option value="1">Social Media</option>
+                        <option value="3">Peer Referral</option>
+                        <option value="5">Other</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <!-- Safety and Security Section  -->
+            <fieldset class="box">
+                <legend class="box-title">Safety and Security</legend>
+                <div>
+                    <label>Were safety protocols followed?</label>
+                    <span><input type="radio" name="safety" value="No" class="inline" />No</span>
+                    <span><input type="radio" name="safety" value="Yes" class="inline" id="safety" />Yes</span>
+                </div>
+                <div>
+                    <label for="safety">How safe did you feel during the trek?</label>
+                    <textarea rows="4" cols="30" placeholder="Enter your comment here..."></textarea>
+                </div>
+            </fieldset>
+
+            <!-- Comments and suggestion section -->
+            <fieldset class="box">
+                <legend class="box-title">Suggestions</legend>
+                <div>
+                    <label>Were there any parts of the route that were challenging or could be improved?</label>
+                    <textarea rows="4" cols="30" placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div>
+                    <label>Any other comments or suggestions?</label>
+                    <textarea rows="4" cols="30" placeholder="Enter your comment here..."></textarea>
+                </div>
+            </fieldset>
+
+            <!-- Submit button option -->
+            <div>
+                <input type="submit" value="Submit" id="submit" />
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

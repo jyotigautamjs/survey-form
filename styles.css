@@ -1,0 +1,169 @@
+/* Reset Section  */
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* HTML Body  */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 1.4;
+
+    color: #f5f6f7;
+}
+
+/* HTML Elements  */
+
+div {
+    padding: 2px;
+    margin: 11px;
+}
+
+span {
+    float: right;
+}
+
+/* Main Section  */
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 4px auto;
+
+}
+
+.container::before {
+    background-image: linear-gradient(115deg, rgb(3 3 11 / 70%), rgb(59 39 69 / 40%)), url(/images/bg1.jpg);
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+/* Heading Section  */
+
+.heading {
+    padding: 12px;
+    font-size: 18px;
+    padding-top: 0px;
+    text-align: center;
+}
+
+#title {
+    margin: 0.75em auto 0.1em auto;
+    font-weight: bold;
+    font-size: 44px;
+}
+
+#description {
+    text-align: center;
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    margin: auto;
+    width: 639px;
+    margin-bottom: 26px;
+
+}
+
+/* Form Body  */
+
+#survey-form {
+    max-width: 770px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    background-color: rgba(27, 27, 50, 0.8);
+    padding: 1rem 1.425rem;
+    border-radius: 0.5rem;
+}
+
+/* Form Elements  */
+
+input,
+textarea,
+select {
+    margin: 3px 0 1px 0px;
+    width: 100%;
+    padding: 6px;
+    border-radius: 8px;
+    color: rgb(43, 43, 43);
+    font-weight: bold;
+}
+
+label {
+
+    margin: 0.2rem 0;
+    padding: 2px;
+}
+
+input[type="checkbox"] {
+    width: unset;
+}
+
+/* Personal Information Section  */
+
+.demographic-info label {
+    display: block;
+    margin: 0.2rem 0;
+    padding: 2px;
+}
+
+
+/* Trekking Experience Section  */
+.experience p {
+    padding: 6px;
+    display: inline;
+}
+
+.experience div{
+    margin: 3px;
+}
+
+
+/* Submit Button Option  */
+
+input[type="submit"] {
+    display: block;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #30ad7f;
+
+    border: 1px solid #37af65;
+}
+
+input[type="submit"]:hover {
+    background-color: #37af65;
+}
+
+/* Utility Classes */
+
+.box {
+    padding: 1rem 0.625rem;
+    margin: 12px 0px;
+    border-color: #8f9392;
+    border-radius: 7px;
+}
+
+.box-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d2dfdd;
+    /* color: white; */
+    padding: 5px 10px;
+}
+
+.inline {
+    width: 22px;
+    margin-left: 14px;
+}
